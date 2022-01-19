@@ -2,6 +2,7 @@ import { Card } from "antd";
 import React, { useState } from "react";
 import LoginScreen from "./login";
 import RegisterScreen from "./register";
+import styled from "@emotion/styled";
 export const UnauthenticatedApp = () => {
   const [isRegister, setIsRegister] = useState(false);
   return (
@@ -15,3 +16,8 @@ export const UnauthenticatedApp = () => {
     </div>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
